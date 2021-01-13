@@ -2,7 +2,7 @@
 This repository contains valuable tools for visualizing data from astronomical images of massive data sets.
 
 ## Calibration_data_visualization script
-* Loads data (biases, darks, flats) from specific path
+> Loads data (biases, darks, flats) from specific path
 * Calculates the median and the average of the each file
 * Calculates the median and the average of the master file
 * Calculates the average of the averages
@@ -12,7 +12,7 @@ This repository contains valuable tools for visualizing data from astronomical i
 * Visualizes the master file in a histogram
 * Loads at least three files random from the path and visualize them in the same histogram with the master file
 ## Photometry_one_star script
-* Loads aligned images of an object
+> Loads aligned images of an object
 * Finds the center of the object using DS9
 * Crops the area of the file with the object to examine
 * Plots the data for horizontal and vertical axes
@@ -27,7 +27,7 @@ This repository contains valuable tools for visualizing data from astronomical i
 * Plots the object data with and without background for comparison
 
 ## Photometry_three_stars script
-* Loads aligned images of an object
+> Loads aligned images of an object
 * Finds the center of a object and two more of similar intensity for comparison using DS9
 * For those three objects in all the files in total:
 * Crops the area of the file with the object to examine
@@ -46,3 +46,16 @@ This repository contains valuable tools for visualizing data from astronomical i
 * Normalizes the objects and plot for comparison
 * Creates CSV file that contains time and flux values for all the reduced from background objects (unnormalized)
 
+## CSV_processing script
+> Loads the CSV that contains time and flux values for all the reduced from background objects:
+* Extracts into array form
+* Plots the Time-Intensity diagram for the 3 objects
+* Converts and normalize the time array
+* Normalizes the objects
+* Divides the normalized main object with the comparisons
+* Plots the above to visualize one phase of the eclipse of the object
+## FWHM_checking script
+> Loads the CSV that contains the FWHM and x0 gauss parameters
+* Extracts the files into array form
+* Plots the FWHM data-Image number for checking
+* Plots the x0 data-Image number for checking
